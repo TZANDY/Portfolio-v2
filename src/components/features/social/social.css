@@ -1,0 +1,7 @@
+@media (max-width: 500px) {
+    .home__social{
+        width: max-content;
+        display: grid;
+        flex-direction: row;
+    }
+}

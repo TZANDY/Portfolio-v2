@@ -2,7 +2,7 @@ import { FaInstagram, FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 
 export function Social() {
   return (
-    <div className="home__social flex flex-col p-4">
+    <div className="home__social flex flex-col p-4 w-16 sd:flex-row">
       <a
          href="#"
         className="home__social-icon"

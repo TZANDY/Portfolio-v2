@@ -1,0 +1,8 @@
+@media (max-width: 500px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+}
