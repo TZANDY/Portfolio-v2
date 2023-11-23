@@ -1,18 +1,14 @@
-import './App.css'
-import Nav from './components/features/nav/Nav'
+import "./App.css";
+import Home from "./components/features/home/Home";
+import Nav from "./components/features/nav/Nav";
 
 function App() {
-
-
   return (
-    <>
-    <Nav/>
-      <h1 className="text-3xl font-bold">
-        Hello world!
-      </h1>
-      
-    </>
-  )
+    <div className="bg-slate-200 dark:bg-gray-900">
+      <Nav />
+      <Home />
+    </div>
+  );
 }
 
-export default App
+export default App;
