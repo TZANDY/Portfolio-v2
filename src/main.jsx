@@ -9,7 +9,7 @@ import {
 import Root from './routes/root.jsx';
 import ErrorPage from './utils/error-page.jsx';
 import Projects from './components/projects/Projects.jsx';
-//import './index.css'
+import './index.css'
 
 const router = createBrowserRouter([
   {

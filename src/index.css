@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,600;1,100&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+/*
 body {
   margin: 0;
   display: flex;
@@ -8,7 +14,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-/*
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
