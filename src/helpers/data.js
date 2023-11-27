@@ -9,8 +9,8 @@ export const perfil = {
 export const experience = [
   {
     id: 1,
-    fechaInicio: "20-09-2023",
-    fechaFin: "ACTUALMENTE",
+    fechaInicio: "2023-09-20",
+    fechaFin: "",
     empresa: "SERPOST",
     puesto: "Practicante en Ingeniería de Sistemas",
     tareas: [
@@ -47,8 +47,8 @@ export const experience = [
   
   {
     id: 2,
-    fechaInicio: "01-03-2021",
-    fechaFin: "30-06-2023",
+    fechaInicio: "2021-03-01",
+    fechaFin: "2023-06-30",
     empresa: "MARIARANDA",
     puesto: "Soporte Tecnico",
     tareas: [
