@@ -31,7 +31,7 @@ export default function Experience() {
                     {
                       <ul>
                         {exp.tareas.map((item) => {
-                          return <li key={item.id} className="text-green-400">- {item.descripcion}</li>;
+                          return <li key={item.id}>- {item.descripcion}</li>;
                         })}
                       </ul>
                     }

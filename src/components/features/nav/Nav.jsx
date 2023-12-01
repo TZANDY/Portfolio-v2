@@ -5,7 +5,7 @@ import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle }
 export default function Nav() {
     return (
 
-        <Navbar fluid rounded className='sticky top-0'>
+        <Navbar fluid rounded className='top-0 backdrop-blur-sm bg-white/10'>
             <NavbarBrand className='flex'>
                 <i className='text-slate-200 text-3xl'>Andi</i>
             </NavbarBrand>
