@@ -44,7 +44,7 @@ export const experience = [
     ],
     experienceState: true,
   },
-  
+
   {
     id: 2,
     fechaInicio: "2021-03-01",
@@ -81,6 +81,27 @@ export const experience = [
       },
     ],
     experienceState: true,
+  },
+];
+
+export const education = [
+  {
+    id: 1,
+    fechaInicio: "2023-08-19",
+    fechaFin: "2023-03-01",
+    institution: "Universidad Peruana de Ciencias Aplicadas UPC",
+    carrera: "Ingeniería de Sistemas",
+    grado: "Bachiller",
+    educationState: true,
+  },
+  {
+    id: 2,
+    fechaInicio: "2023-08-19",
+    fechaFin: "2019-07-01",
+    institution: "Instituto Cibertec",
+    carrera: "Computación e Informática",
+    grado: "Técnico",
+    educationState: true,
   },
 ];
 

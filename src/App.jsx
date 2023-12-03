@@ -1,11 +1,11 @@
-import { Floating } from "flowbite-react/lib/esm/components/Floating";
 import "./App.css";
 import Curriculum from "./components/curriculum/Curriculum";
 import Footer from "./components/features/footer/Footer";
 import Home from "./components/features/home/Home";
 import Nav from "./components/features/nav/Nav";
 import Projects from "./components/projects/Projects";
-import Contact from "./components/features/contact/Contact";
+//import Contact from "./components/features/contact/Contact";
+import Education from "./components/education/Education";
 
 function App() {
   return (
@@ -13,8 +13,9 @@ function App() {
       <Nav />
       <Home />
       <Curriculum/>
+      <Education/>
       <Projects/>
-      <Contact/>
+      
       <Footer/>
       
     </div>
