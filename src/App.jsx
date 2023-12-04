@@ -6,6 +6,7 @@ import Nav from "./components/features/nav/Nav";
 import Projects from "./components/projects/Projects";
 //import Contact from "./components/features/contact/Contact";
 import Education from "./components/education/Education";
+import { Floating } from "flowbite-react/lib/esm/components/Floating";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Projects/>
       
       <Footer/>
+      
       
     </div>
     

@@ -12,7 +12,7 @@ export const experience = [
     fechaInicio: "2023-09-20",
     fechaFin: "",
     empresa: "SERPOST",
-    puesto: "Practicante en Ingeniería de Sistemas",
+    puesto: "Practicante en Sistemas",
     tareas: [
       {
         id: 1,
