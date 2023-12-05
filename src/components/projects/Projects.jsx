@@ -5,7 +5,7 @@ import './projects.css'
 
 export default function Projects() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center pt-20">
       <h3 className="dark:text-slate-200 text-center items-center justify-center w-full text-4xl">
         Proyectos
       </h3>

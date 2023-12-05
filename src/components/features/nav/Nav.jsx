@@ -1,27 +1,39 @@
-import './nav.css'
+import "./nav.css";
 import { AiTwotoneThunderbolt } from "react-icons/ai";
-import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from 'flowbite-react';
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarLink,
+  NavbarToggle,
+} from "flowbite-react";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
-    return (
+  return (
+    <Navbar fluid rounded  className=" bg-white/10">
+      <NavbarBrand>
+        <i className="text-slate-200 text-3xl">Andi</i>
+        <AiTwotoneThunderbolt className="text-slate-200 text-3xl" />
+      </NavbarBrand>
+      <div className="flex md:order-2">
+        <NavbarToggle />
+      </div>
+      <NavbarCollapse>
+        <NavbarLink>
+          <Link to={"/"}>Home</Link>
+        </NavbarLink>
 
-        <Navbar fluid rounded className='top-0 backdrop-blur-sm bg-white/10'>
-            <NavbarBrand className='flex'>
-                <i className='text-slate-200 text-3xl'>Andi</i>
-            </NavbarBrand>
-            <div className="flex md:order-2">
-                
-                <NavbarToggle />
-            </div>
-            <NavbarCollapse>
-                <NavbarLink href="/" active>
-                    Home
-                </NavbarLink>
-                <NavbarLink href="#">About</NavbarLink>
-                <NavbarLink href="projects">Projects</NavbarLink>
-                <NavbarLink href="#">Contact</NavbarLink>
-            </NavbarCollapse>
-        </Navbar>
+        <NavbarLink>
+          <Link to={"about"}>About</Link>
+        </NavbarLink>
 
-    )
+        <NavbarLink>
+          <Link to={"projects"}>Projects</Link>
+        </NavbarLink>
+
+        <NavbarLink href="#">Contact</NavbarLink>
+      </NavbarCollapse>
+    </Navbar>
+  );
 }

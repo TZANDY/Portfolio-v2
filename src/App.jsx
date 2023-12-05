@@ -1,27 +1,24 @@
 import "./App.css";
-import Curriculum from "./components/curriculum/Curriculum";
 import Footer from "./components/features/footer/Footer";
 import Home from "./components/features/home/Home";
 import Nav from "./components/features/nav/Nav";
 import Projects from "./components/projects/Projects";
 //import Contact from "./components/features/contact/Contact";
-import Education from "./components/education/Education";
-import { Floating } from "flowbite-react/lib/esm/components/Floating";
+import { Route, Routes } from "react-router-dom";
+import About from "./components/features/about/About";
 
 function App() {
   return (
-    <div className="bg-slate-200 dark:bg-gray-900">
+    <div className="bg-slate-200 dark:bg-slate-900">
       <Nav />
-      <Home />
-      <Curriculum/>
-      <Education/>
-      <Projects/>
-      
-      <Footer/>
-      
-      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+
+      <Footer />
     </div>
-    
   );
 }
 

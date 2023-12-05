@@ -5,6 +5,12 @@
 
 *{
   font-family: 'Josefin Sans', sans-serif;
+
+  /*background-image: url('https://www.roc21.com/blog/wp-content/uploads/2012/09/fondos-para-pa%CC%81ginas-web-6.jpg');*/
+}
+
+:root {
+  background-color: black;
 }
 /*
 body {
@@ -28,8 +34,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
+}*/
+/*
 a {
   font-weight: 500;
   color: #646cff;
