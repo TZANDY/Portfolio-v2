@@ -1,7 +1,7 @@
 import { projects } from "../../helpers/data";
 import { Badge } from "flowbite-react";
 import { Card, Button } from "flowbite-react";
-import './projects.css'
+import "./projects.css";
 
 export default function Projects() {
   return (

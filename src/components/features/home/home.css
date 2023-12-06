@@ -1,3 +1,7 @@
+:root{
+    --padding: 0px;
+}
+
 .home__img {
     background: url("../../../assets/profile.jpg");
     /*background: url("../../../assets/banana-cat-walking.gif");*/
@@ -32,6 +36,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        
         
     }
     

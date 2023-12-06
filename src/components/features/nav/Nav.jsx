@@ -1,5 +1,4 @@
 import "./nav.css";
-import { AiTwotoneThunderbolt } from "react-icons/ai";
 import {
   Navbar,
   NavbarBrand,
@@ -11,10 +10,10 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
-    <Navbar fluid rounded  className=" bg-white/10">
+    <Navbar fluid className=" dark:bg-white/10">
       <NavbarBrand>
-        <i className="text-slate-200 text-3xl">Andi</i>
-        <AiTwotoneThunderbolt className="text-slate-200 text-3xl" />
+        <h1 className="logo text-black font-bold dark:text-slate-200 text-3xl"><Link to={'/'} >ANDI</Link></h1>
+        
       </NavbarBrand>
       <div className="flex md:order-2">
         <NavbarToggle />
