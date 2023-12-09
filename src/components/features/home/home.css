@@ -6,11 +6,11 @@
     background: url("../../../assets/profile.jpg");
     /*background: url("../../../assets/banana-cat-walking.gif");*/
     background-repeat: no-repeat;
-    background-position: center;
+    /*background-position: center;*/
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 90%);
-    justify-self: center;
-    order: 2;
+    /*box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 90%);*/
+    /*justify-self: center;*/
+    /*order: 2;*/
     width: 250px;
     height: 250px;
     animation: profile__animate 8s ease-in-out infinite 1s;
