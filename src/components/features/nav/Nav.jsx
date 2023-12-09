@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
-    <Navbar fluid className=" dark:bg-white/10">
+    <Navbar fluid className=" dark:bg-white/5">
       <NavbarBrand>
         <h1 className="logo text-black font-bold dark:text-slate-200 text-3xl"><Link to={'/'} >ANDI</Link></h1>
         
@@ -20,7 +20,7 @@ export default function Nav() {
       </div>
       <NavbarCollapse>
         <NavbarLink>
-          <Link to={"/"}>Home</Link>
+          <Link to={"/"} className="font-bold">Home</Link>
         </NavbarLink>
 
         <NavbarLink>

@@ -1,6 +1,8 @@
 import { Button } from "flowbite-react";
 import Info from "./Info";
-import Interest from "./Interest";
+
+import Education from "../../education/Education";
+import Experience from "../../experience/Experience";
 
 export default function About() {
   return (
@@ -17,24 +19,29 @@ export default function About() {
       <div className="flex flex-row text-center">
         <div className="">
           <Info />
-          <p className="text-slate-200 text-left">
-            I am a graduate of Systems Engineering. As a freelance developer I
-            have created several projects for some well-known clients and for
-            the companies where I have worked, but I want to gain more
-            experience and learn more about that world
-          </p>
-
-          <Button outline gradientDuoTone="greenToBlue">Descargar CV</Button>
+          <div className="p-5 items-center justify-center">
+            <p className="text-slate-200 text-center">
+              I am a graduate of Systems Engineering. As a freelance developer I
+              have created several projects for some well-known clients and for
+              the companies where I have worked, but I want to gain more
+              experience and learn more about that world
+            </p>
+          </div>
         </div>
       </div>
+      
+      <div className="">
+        <Button outline gradientDuoTone="greenToBlue">
+          Descargar CV
+        </Button>
+      </div>
+      
+      <div className="flex flex-row">
+        <Experience/>
+      </div>
 
-      <span className="dark:text-slate-200 text-center items-center justify-center w-full ">
-        My interests
-      </span>
-      <div className="flex flex-row text-center">
-        <div className="">
-          <Interest />
-        </div>
+      <div className="flex flex-row text-right">
+        <Education />
       </div>
     </section>
   );

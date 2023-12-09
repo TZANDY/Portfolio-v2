@@ -9,7 +9,7 @@ import About from "./components/features/about/About";
 
 function App() {
   return (
-    <div className="bg-slate-200 dark:bg-slate-900">
+    <div className="bg-green-300 dark:bg-slate-900 bg-gradient-to-t from-indigo-500">
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />

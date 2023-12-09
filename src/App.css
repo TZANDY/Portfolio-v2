@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.body{
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0) 20px,
+    rgba(0, 0, 0, 0) 40px,
+    #df6c4f 40px,
+    #df6c4f 60px
+  );
+}
 /*
 #root {
   max-width: 1280px;

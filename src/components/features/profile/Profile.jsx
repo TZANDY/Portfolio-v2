@@ -8,8 +8,8 @@ export default function Profile() {
       <h1 className="text-6xl md:text-7xl xl:text-9xl font-bold dark:text-cyan-400">
         {perfil.displayName}
       </h1>
-      <h3 className="text-2xl font-semibold dark:text-red-600">{perfil.rol}</h3>
-      <p className="text-xl dark:text-purple-400 font-normal mt-2 mb-2">
+      <h3 className="text-3xl font-bold dark:text-red-600">{perfil.rol}</h3>
+      <p className="text-xl border-red-900 dark:text-purple-400 font-semibold mt-2 mb-2">
         {MENSAJE}
       </p>
       <Button outline gradientDuoTone="purpleToPink">

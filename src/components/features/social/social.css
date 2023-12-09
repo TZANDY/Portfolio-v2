@@ -1,7 +1,14 @@
 @media (max-width: 500px) {
-    .home__social{
-        width: max-content;
-        display: grid;
-        flex-direction: row;
-    }
+  .home__social {
+    width: max-content;
+    display: grid;
+    flex-direction: row;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0) 20px,
+      rgba(0, 0, 0, 0) 40px,
+      #df6c4f 40px,
+      #df6c4f 60px
+    );
+  }
 }

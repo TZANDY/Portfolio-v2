@@ -1,35 +1,33 @@
-import {
-  Footer,
-  FooterCopyright,
-  FooterIcon,
-} from "flowbite-react";
-import {
+import { Footer, FooterCopyright } from "flowbite-react";
+/*import {
   BsDribbble,
   BsFacebook,
   BsGithub,
   BsInstagram,
   BsTwitter,
-} from "react-icons/bs";
+} from "react-icons/bs";*/
 import { perfil } from "../../../helpers/data";
+//import { Social } from "../social/Social";
 
 export default function component() {
   return (
-    <Footer>
+    <Footer className="h-56  bg-gray-700">
       <div className="w-full">
-        
-        <div className="w-full bg-gray-700 px-4 py-6 sm:flex sm:items-center sm:justify-between">
+        <div className="w-full px-4 py-6 sm:flex sm:items-center sm:justify-center ">
           <FooterCopyright
-            href="#"
-            by={perfil.nombre + " " + perfil.apellido}
+           className="text-xl font-extrabold"
+           style={{color:"white"}}
+            by={perfil.nombre + " " + perfil.apellido+". "+"v.2.0"}
             year={2023}
           />
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <FooterIcon href="#" icon={BsFacebook} />
-            <FooterIcon href="#" icon={BsInstagram} />
-            <FooterIcon href="#" icon={BsTwitter} />
-            <FooterIcon href="#" icon={BsGithub} />
-            <FooterIcon href="#" icon={BsDribbble} />
-          </div>
+          {/*<div className="mt-4 flex flex-row space-x-6 sm:mt-0 sm:justify-center">
+            
+            <FooterIcon href="#" icon={BsFacebook}  className="text-indigo-200 hover:text-yellow-300"/>
+            <FooterIcon href="#" icon={BsInstagram} className="text-indigo-200 hover:text-yellow-300" />
+            <FooterIcon href="#" icon={BsTwitter} className="text-indigo-200 hover:text-yellow-300" />
+            <FooterIcon href="#" icon={BsGithub} className="text-indigo-200 hover:text-yellow-300" />
+            <FooterIcon href="#" icon={BsDribbble} className="text-indigo-200 hover:text-yellow-300" />
+          </div>*/}
         </div>
       </div>
     </Footer>
