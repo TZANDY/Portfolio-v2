@@ -9,7 +9,7 @@ export default function Skills() {
       </span>
       <div className="grid grid-cols-2 text-center items-center justify-center w-full">
         <div className="flex text-center items-center">
-          Backend
+          
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"
@@ -51,7 +51,7 @@ export default function Skills() {
           </svg>
         </div>
         <div className="flex text-center justify-center">
-          Frontend
+          
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"

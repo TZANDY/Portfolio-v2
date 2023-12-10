@@ -12,7 +12,7 @@ export default function Projects() {
       <span className="dark:text-slate-200 text-center items-center justify-center w-full ">
         Algo divertido por aquí
       </span>
-      <div className="grid  m-2 gap-2 gap-y-3 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid m-2 gap-2 gap-y-3 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pb-20 pt-10">
         {projects.map((item) => {
           return (
             <Card

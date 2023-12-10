@@ -31,7 +31,7 @@ export default function About() {
       </div>
       
       <div className="">
-        <Button outline gradientDuoTone="greenToBlue">
+        <Button outline gradientDuoTone="pinkToOrange">
           Descargar CV
         </Button>
       </div>
