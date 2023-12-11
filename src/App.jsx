@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import About from "./components/features/about/About";
 import Contact from "./components/features/contact/Contact";
 
+
 function App() {
   return (
     <div className="bg-green-300 dark:bg-slate-900 bg-gradient-to-t from-indigo-500">
