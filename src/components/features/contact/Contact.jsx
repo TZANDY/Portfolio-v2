@@ -57,7 +57,7 @@ export default function Contact() {
       <span className="dark:text-slate-200 text-center items-center justify-center">
         send me a message
       </span>
-      <div className="mt-10 mb-10 md:w-96 xl:w-96 w-full p-4">
+      <div className="mt-10 mb-10 md:w-96 xl:w-96 w-full p-4 bg-slate-300 dark:bg-slate-600 shadow-xl rounded-md">
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <div>
             <div className="mb-2 block">
@@ -67,6 +67,7 @@ export default function Contact() {
               id="fullname"
               type="text"
               placeholder="full name"
+              className="shadow-md rounded-lg"
               required
             />
           </div>
@@ -74,7 +75,7 @@ export default function Contact() {
             <div className="mb-2 block">
               <Label htmlFor="phone" value="Celular" />
             </div>
-            <TextInput id="phone" type="text" placeholder="phone" required />
+            <TextInput id="phone" type="text" placeholder="phone" required className="shadow-md rounded-lg" />
           </div>
           <div>
             <div className="mb-2 block">
@@ -83,7 +84,7 @@ export default function Contact() {
             <TextInput
               id="email"
               type="email"
-
+              className="shadow-md rounded-lg"
               placeholder="name@mail.com"
               required
             />
@@ -97,11 +98,11 @@ export default function Contact() {
               type="text"
               style={{ resize: 'none' }}
               placeholder="Mensaje"
-              className="h-48 p-2"
+              className="h-48 p-2 shadow-md rounded-lg"
               required
             />
           </div>
-          <Button type="submit" outline gradientDuoTone="purpleToBlue">Submit</Button>
+          <Button type="submit" outline gradientDuoTone="purpleToBlue" className="shadow-md">Submit</Button>
         </form>
       </div>
     </section>
