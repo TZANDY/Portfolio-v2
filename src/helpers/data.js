@@ -186,3 +186,11 @@ export const COLORS = [
     RED: "red",
   },
 ];
+
+
+export const contact = {
+  fullname:"",
+  celular:"",
+  email:"",
+  message:""
+}
