@@ -4,6 +4,7 @@ import { initializeApp } from "firebase/app";
 import { useState } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Spinner } from 'flowbite-react';
 
 //import { getAnalytics } from "firebase/analytics";
 
@@ -25,6 +26,7 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setCargando(true);
 
     emailjs
       .sendForm(
@@ -36,17 +38,26 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          alert("Mensaje Enviado", result.text)
         },
         (error) => {
           console.log(error.text);
+          alert("Hubo un error", error.text)
         }
-      );
+      ).finally(() => {
+        setEmail("");
+        setFullname("");
+        setPhone("");
+        setMessage("");
+        setCargando(false);
+      });
   };
 
   const [fullname, setFullname] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [cargando, setCargando] = useState(false)
   /*
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -161,14 +172,16 @@ export default function Contact() {
               required
             />
           </div>
+
           <Button
             type="submit"
             outline
             gradientDuoTone="purpleToBlue"
             className="shadow-md"
           >
-            Submit
+            {cargando ? <Spinner color="warning" aria-label="Default status example" /> : <span className="pl-3">Submit</span>}
           </Button>
+
         </form>
       </div>
     </section>
