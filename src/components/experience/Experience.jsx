@@ -14,25 +14,25 @@ import { formatDate } from "../../helpers/helper";
 
 export default function Experience() {
   return (
-    <div className="flex flex-col p-4 items-center justify-center sm:p-20">
-      <h3 className="dark:text-slate-200 text-center items-center w-full text-4xl ">
+    <div className="max-w-screen-md mx-auto m-20 flex flex-col items-center justify-center">
+      <h3 className="text-slate-200 text-center items-center w-full text-4xl ">
         Experiencia
       </h3>
-      <span className=" dark:text-slate-200">mi viaje personal</span>
-      <div>
+      <span  className="text-slate-200 text-center items-center justify-center w-full ">mi viaje personal</span>
+      <div className="pt-10">
         <Timeline className="border-slate-400 dark:border-cyan-600">
           {experience.map((exp) => {
             return (
               <TimelineItem key={exp.id}>
                 <Timeline.Point  icon={FaBriefcase}/>
                 <TimelineContent>
-                  <TimelineTime>{formatDate(exp.fechaFin)}</TimelineTime>
-                  <TimelineTitle>{exp.puesto}</TimelineTitle>
+                  <TimelineTime className="text-red-500 dark:text-red-500">{formatDate(exp.fechaFin)}</TimelineTime>
+                  <TimelineTitle className="text-yellow-300 dark:text-yellow-300">{exp.puesto}</TimelineTitle>
                   <TimelineBody>
                     {
                       <ul>
                         {exp.tareas.map((item) => {
-                          return <li key={item.id}>- {item.descripcion}</li>;
+                          return <li key={item.id}  className="text-slate-200 dark:text-slate-200">👉 {item.descripcion}</li>;
                         })}
                       </ul>
                     }

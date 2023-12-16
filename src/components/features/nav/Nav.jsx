@@ -10,12 +10,15 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
-    <Navbar fluid className="bg-white/90 dark:bg-white/5 shadow-md">
-      <NavbarBrand>
+    <Navbar
+      fluid
+      className="bg-white/90 backdrop-blur-sm dark:bg-white/5 shadow-sm shadow-slate-400"
+    >
+      <NavbarBrand className="transform transition hover:scale-110">
         <h1 className="logo text-black font-bold dark:text-slate-200 text-3xl">
           <Link
             to={"/"}
-            className="font-extrabold text-green-600 dark:text-green-300"
+            className="font-extrabold text-green-600 dark:text-green-400"
           >
             andi.dev
           </Link>
@@ -25,22 +28,40 @@ export default function Nav() {
         <NavbarToggle />
       </div>
       <NavbarCollapse>
-        <NavbarLink >
-          <Link to={"/"} className=" dark:text-cyan-400 dark:hover:text-slate-200 ">
+        <NavbarLink className="transform transition hover:scale-105">
+          <Link
+            to={"/"}
+            className=" hover:text-green-600 dark:text-green-400 font-extrabold dark:hover:text-slate-100  "
+          >
             Home
           </Link>
         </NavbarLink>
 
-        <NavbarLink>
-          <Link to={"about"} className=" dark:text-cyan-400 dark:hover:text-slate-200 ">About</Link>
+        <NavbarLink className="transform transition hover:scale-105">
+          <Link
+            to={"about"}
+            className="hover:text-green-600 dark:text-slate-400 font-extrabold dark:hover:text-slate-100  "
+          >
+            Info
+          </Link>
         </NavbarLink>
 
-        <NavbarLink>
-          <Link to={"projects"} className=" dark:text-cyan-400 dark:hover:text-slate-200 ">Projects</Link>
+        <NavbarLink className="transform transition hover:scale-105">
+          <Link
+            to={"projects"}
+            className="hover:text-green-600 dark:text-slate-400 font-extrabold dark:hover:text-slate-100  "
+          >
+            Projects
+          </Link>
         </NavbarLink>
 
-        <NavbarLink>
-          <Link to={"contact"} className=" dark:text-cyan-400 dark:hover:text-slate-200 ">Contact</Link>
+        <NavbarLink className="transform transition hover:scale-105">
+          <Link
+            to={"contact"}
+            className="hover:text-green-600 dark:text-slate-400 font-extrabold dark:hover:text-slate-100  "
+          >
+            Contact
+          </Link>
         </NavbarLink>
       </NavbarCollapse>
     </Navbar>

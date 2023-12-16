@@ -11,7 +11,7 @@ import { perfil } from "../../../helpers/data";
 
 export default function component() {
   return (
-    <Footer className="flex justify-center items-center text-center h-56 bg-white/90 dark:bg-gray-700 shadow-inner">
+    <Footer className="flex justify-center items-center text-center h-56 bg-white/90 dark:bg-black shadow-inner">
       <div className="w-full">
         <div className="w-full px-4 py-6 sm:flex sm:items-center sm:justify-center ">
           <FooterCopyright

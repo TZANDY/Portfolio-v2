@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,600;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 *{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Outfit', sans-serif;
 
   /*background-image: url('https://www.roc21.com/blog/wp-content/uploads/2012/09/fondos-para-pa%CC%81ginas-web-6.jpg');*/
 }
 
 :root {
   background-color: black;
+  
+
 }
 /*
 body {

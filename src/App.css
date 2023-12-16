@@ -1,14 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.body{
+/*#pages {
+  
+  background: url("/src/assets/fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}*/
+
+#pages{
   background: repeating-linear-gradient(
     45deg,
     rgba(0, 0, 0, 0) 20px,
     rgba(0, 0, 0, 0) 40px,
-    #df6c4f 40px,
-    #df6c4f 60px
+    #212121 40px,
+    #212121 60px
   );
+  
+  background-attachment: fixed;
+
 }
 /*
 #root {

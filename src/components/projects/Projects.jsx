@@ -6,10 +6,10 @@ import "./projects.css";
 export default function Projects() {
   return (
     <div className="flex flex-col items-center justify-center pt-20">
-      <h3 className="dark:text-slate-200 text-center items-center justify-center w-full text-4xl">
+      <h3 className="text-slate-200 text-center items-center justify-center w-full text-4xl">
         Proyectos
       </h3>
-      <span className="dark:text-slate-200 text-center items-center justify-center w-full ">
+      <span className="text-slate-200 text-center items-center justify-center w-full ">
         Algo divertido por aquí
       </span>
       <div className="grid m-2 gap-2 gap-y-3 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pb-20 pt-10">

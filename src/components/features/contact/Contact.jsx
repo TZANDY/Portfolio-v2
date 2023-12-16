@@ -1,8 +1,6 @@
 import { Button, Label, TextInput, Textarea } from "flowbite-react";
-import { getFirestore, collection, addDoc } from "firebase/firestore";
-import { initializeApp } from "firebase/app";
 import { useState } from "react";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Spinner } from 'flowbite-react';
 
@@ -100,16 +98,16 @@ export default function Contact() {
 
   return (
     <section
-      className="max-w-screen-md mx-auto m-20 flex flex-col items-center justify-center"
+      className=" max-w-screen-md mx-auto m-20 flex flex-col items-center justify-center"
       id="about"
     >
-      <h3 className="dark:text-slate-200 text-center items-center justify-center text-4xl">
+      <h3 className="text-slate-200 text-center items-center justify-center text-4xl">
         Contact
       </h3>
-      <span className="dark:text-slate-200 text-center items-center justify-center">
+      <span className="text-slate-200 text-center items-center justify-center">
         send me a message
       </span>
-      <div className="mt-10 mb-10 md:w-96 xl:w-96 w-full p-4 bg-slate-300 dark:bg-slate-600 shadow-xl rounded-md">
+      <div className="mt-10 m-3 mb-10 md:w-96 xl:w-96 w-full p-4 bg-slate-200 dark:bg-slate-600 shadow-md shadow-red-500 rounded-md">
         <form className="flex flex-col gap-4" ref={form} onSubmit={sendEmail}>
           <div>
             <div className="mb-2 block">
