@@ -3,7 +3,7 @@ export const perfil = {
   apellido: "Infante Silva",
   displayName: "Andi Infante Silva",
   edad: 27,
-  rol: "Developer web full stack",
+  rol: "Junior Web developer",
   estado: true,
 };
 export const experience = [
@@ -180,7 +180,8 @@ export const projects = [
 ];
 
 export const MENSAJE =
-  "I really want to work and contribute with all my creativity, passion and ability in the world of development.";
+"Tengo muchas ganas de trabajar y aportar con toda mi creatividad, pasión y capacidad en el mundo del desarrollo."
+  /*"I really want to work and contribute with all my creativity, passion and ability in the world of development.";*/
 export const COLORS = [
   {
     RED: "red",

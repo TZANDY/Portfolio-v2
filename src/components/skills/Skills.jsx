@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <div className="flex flex-col items-center justify-center pt-20">
+    <div className="flex flex-col items-center justify-center pt-20 pb-20">
       <h3 className="text-slate-200 text-center items-center justify-center w-full text-4xl">
         Skills
       </h3>

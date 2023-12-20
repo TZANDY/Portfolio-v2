@@ -1,11 +1,13 @@
 import { projects } from "../../helpers/data";
-import { Badge } from "flowbite-react";
+import { Badge, Modal } from "flowbite-react";
 import { Card, Button } from "flowbite-react";
 import "./projects.css";
+import { useState } from "react";
 
 export default function Projects() {
+  const [openModal, setOpenModal] = useState(false);
   return (
-    <div className="flex flex-col items-center justify-center pt-20">
+    <div className="flex flex-col items-center justify-center pt-20 pb-20 animate-fade-down animate-once animate-ease-out">
       <h3 className="text-slate-200 text-center items-center justify-center w-full text-4xl">
         Proyectos
       </h3>
@@ -41,9 +43,30 @@ export default function Projects() {
                   </Badge>
                 ))}
               </div>
-              <Button outline gradientDuoTone="greenToBlue">
+              <Button
+                outline
+                gradientDuoTone="greenToBlue"
+                onClick={() => setOpenModal(true)}
+              >
                 vamos!
               </Button>
+
+              <Modal show={openModal} onClose={() => setOpenModal(false)}>
+                <Modal.Header key={item.id}>Aviso</Modal.Header>
+                <Modal.Body>
+                  <div className="space-y-6">
+                    <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                      Actualmente está en mantenimiento, mil disculpas
+                    </p>
+                  </div>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button onClick={() => setOpenModal(false)}>Aceptar</Button>
+                  <Button color="gray" onClick={() => setOpenModal(false)}>
+                    Cancelar
+                  </Button>
+                </Modal.Footer>
+              </Modal>
             </Card>
           );
         })}
