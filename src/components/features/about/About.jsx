@@ -25,12 +25,16 @@ export default function About() {
           <Info />
           <div className="p-5 items-center justify-center">
             <p className="text-slate-200 text-center">
-              Soy graduado de 
+              Soy graduado de
               <span className="text-orange-400 font-bold">
                 {" Ingeniería de Sistemas"}
               </span>
-              . Como freelance he creado varios proyectos para las empresas donde he trabajado, por ello busco
-              adquirir más experiencia y aprender más sobre este hermoso mundo del desarrollo 😍
+              . Como profesional independiente, he llevado a cabo diversos
+              proyectos para las empresas en las que he colaborado. En  la búsqueda
+              constante de ampliar mi experiencia y profundizar mis
+              conocimientos en el fascinante ámbito del desarrollo, estoy
+              decidido a seguir aprendiendo y creciendo en este apasionante
+              mundo. 😍
             </p>
             {/*
             <p className="text-slate-200 text-center">

@@ -12,7 +12,7 @@ export default function Projects() {
         Proyectos
       </h3>
       <span className="text-slate-200 text-center items-center justify-center w-full ">
-        Algo divertido por aquí
+        Integrando conocimientos y habilidades
       </span>
       <div className="grid m-2 gap-2 gap-y-3 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pb-20 pt-10">
         {projects.map((item) => {

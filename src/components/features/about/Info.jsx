@@ -34,8 +34,8 @@ const Info = () => {
             d="M160 368L32 256l128-112M352 368l128-112-128-112"
           />
         </svg>
-        <h3 className="text-blue-400">Experience</h3>
-        <span className="text-blue-400">+3 Years in TI</span>
+        <h3 className="text-blue-400">Experiencia</h3>
+        <span className="text-blue-400">+4 Años en TI</span>
       </div>
 
       <div className="flex justify-center items-center flex-col">
@@ -47,8 +47,8 @@ const Info = () => {
           <path d="M2.5 8a5.5 5.5 0 018.25-4.764.5.5 0 00.5-.866A6.5 6.5 0 1014.5 8a.5.5 0 00-1 0 5.5 5.5 0 11-11 0z" />
           <path d="M15.354 3.354a.5.5 0 00-.708-.708L8 9.293 5.354 6.646a.5.5 0 10-.708.708l3 3a.5.5 0 00.708 0l7-7z" />
         </svg>
-        <h3 className="text-cyan-400">Completed</h3>
-        <span className="text-cyan-400">+5 Projects</span>
+        <h3 className="text-cyan-400">Completado</h3>
+        <span className="text-cyan-400">+5 Proyectos</span>
       </div>
 
       <div className="flex justify-center items-center flex-col">

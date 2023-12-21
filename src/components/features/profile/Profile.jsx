@@ -18,6 +18,7 @@ export default function Profile() {
       <Button
         outline
         gradientDuoTone="purpleToPink"
+        className="mt-5 hover:animate-bounce animate-duration-[1000ms] animate-infinite"
                
       >
         <Link

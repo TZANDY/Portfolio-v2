@@ -106,7 +106,7 @@ export default function Contact() {
         Contacto
       </h3>
       <span className="text-slate-200 text-center items-center justify-center">
-       Enviame un mensaje
+        Déjame un mensaje{" "}
       </span>
       <div className="mt-10 m-3 mb-10 md:w-96 xl:w-96 w-full p-4 bg-slate-200 dark:bg-slate-600 shadow-md shadow-red-500 rounded-md">
         <form className="flex flex-col gap-4" ref={form} onSubmit={sendEmail}>
@@ -122,6 +122,7 @@ export default function Contact() {
               type="text"
               placeholder="full name"
               className="shadow-md rounded-lg"
+              pattern="[A-Za-z\s]+"
               required
             />
           </div>
@@ -136,6 +137,7 @@ export default function Contact() {
               value={phone}
               onChange={handleChangePhone}
               placeholder="phone"
+              pattern="[0-9]+"
               required
               className="shadow-md rounded-lg"
             />
@@ -166,7 +168,7 @@ export default function Contact() {
               value={message}
               onChange={handleChangeMessage}
               style={{ resize: "none" }}
-              placeholder="Mensaje"
+              placeholder="Message"
               className="h-48 p-2 shadow-md rounded-lg"
               required
             />
@@ -181,7 +183,18 @@ export default function Contact() {
             {cargando ? (
               <Spinner color="warning" aria-label="Default status example" />
             ) : (
-              <span className="pl-3">Submit</span>
+              <div className="flex justify-center text-center items-center pl-3">
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  
+                >
+                  <path d="M15.964.686a.5.5 0 00-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 00-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 00.886-.083l6-15zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 00-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178z" />
+                </svg>
+                <span className="ml-1">Enviar</span>
+              </div>
             )}
           </Button>
         </form>

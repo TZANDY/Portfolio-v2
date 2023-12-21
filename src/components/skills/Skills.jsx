@@ -5,9 +5,9 @@ export default function Skills() {
         Skills
       </h3>
       <span className="text-slate-200 text-center items-center justify-center w-full ">
-        My technical level
+        Mi nivel técnico
       </span>
-      <div className="grid grid-cols-2 text-center items-center justify-center w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 text-center items-center justify-center w-full">
         <div className="flex text-center items-center">
           <svg
             viewBox="0 0 24 24"

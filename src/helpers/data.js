@@ -3,7 +3,7 @@ export const perfil = {
   apellido: "Infante Silva",
   displayName: "Andi Infante Silva",
   edad: 27,
-  rol: "Junior Web developer",
+  rol: "Junior developer",
   estado: true,
 };
 export const experience = [
@@ -180,8 +180,10 @@ export const projects = [
 ];
 
 export const MENSAJE =
+"Profesional altamente cualificado en JavaScript y .NET Core, motivado y entusiasta por continuar contribuyendo con creatividad en proyectos desafiantes."
+/*"Mi compromiso, dedicación y pasión ardiente nutren mi aspiración de alcanzar la excelencia como profesional de alto calibre"
 "Tengo muchas ganas de trabajar y aportar con toda mi creatividad, pasión y capacidad en el mundo del desarrollo."
-  /*"I really want to work and contribute with all my creativity, passion and ability in the world of development.";*/
+  "I really want to work and contribute with all my creativity, passion and ability in the world of development.";*/
 export const COLORS = [
   {
     RED: "red",
