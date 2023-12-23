@@ -25,7 +25,7 @@ export default function About() {
           <Info />
           <div className="p-5 items-center justify-center">
             <p className="text-slate-200 text-center">
-              Soy graduado de
+              Soy egresado de
               <span className="text-orange-400 font-bold">
                 {" Ingeniería de Sistemas"}
               </span>

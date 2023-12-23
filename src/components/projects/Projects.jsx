@@ -29,16 +29,24 @@ export default function Projects() {
                 />
               )}
             >
-              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {item.name}
-              </h5>
+              <div className="flex flex-row items-center">
+                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  {item.name}
+                  
+                </h5>
+                <Badge color="warning" className="m-1">{item.version}</Badge>
+              </div>
 
               <p className="font-normal text-gray-700 dark:text-gray-400">
                 {item.description}
               </p>
               <div className="flex flex-wrap gap-2">
                 {item.tecnologias.map((tec, i) => (
-                  <Badge color="success" key={i}>
+                  <Badge
+                    color="success"
+                    className="hover:animate-pulse hover:animate-infinite"
+                    key={i}
+                  >
                     {tec}
                   </Badge>
                 ))}

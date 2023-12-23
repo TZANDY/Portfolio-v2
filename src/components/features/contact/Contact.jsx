@@ -4,6 +4,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Spinner } from "flowbite-react";
 
+
 //import { getAnalytics } from "firebase/analytics";
 
 /*const firebaseConfig = {
@@ -198,7 +199,9 @@ export default function Contact() {
             )}
           </Button>
         </form>
+        
       </div>
+      
     </section>
   );
 }
