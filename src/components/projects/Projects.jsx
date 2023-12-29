@@ -26,10 +26,18 @@ export default function Projects() {
     obtenerDatos();
   }, []);
 
+  const Error = () =>{
+    return(
+      <div className=" max-w-screen-md mx-auto m-20 flex flex-col items-center justify-center h-[700px] ">
+        <h1 className="text-white text-3xl ">No hay proyectos disponibles</h1>
+      </div>
+    )
+  }
+
   if (listaProyectos.length === 0) {
     return (
-      <div>
-        <h1 className="text-white text-3xl">No hay proyectos disponibles</h1>
+      <div className=" max-w-screen-md mx-auto m-20 flex flex-col items-center justify-center h-[700px] animate-ping animate-infinite animate-delay-1000 animate-duration-1000">
+        <h1 className="text-white text-3xl ">No hay proyectos disponibles</h1>
       </div>
     )
   }
