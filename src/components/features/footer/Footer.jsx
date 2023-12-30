@@ -16,7 +16,7 @@ export default function component() {
         <div className="w-full px-4 py-6 sm:flex sm:items-center sm:justify-center ">
           <FooterCopyright
             className="text-xl font-extrabold"
-            by={perfil.nombre + " " + perfil.apellido + ". " + "v.2.0"}
+            by={perfil.nombre + " " + perfil.apellido + ". v" + "2.2.1"}
             year={2023}
           />
 
