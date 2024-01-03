@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export default function Projects() {
   const [openModal, setOpenModal] = useState(false);
   const [listaProyectos, setListaProyectos] = useState([]);
-  const url = "http://andidev.somee.com";
+  const url = "https://andidev.somee.com";
   
 
   const llenarDatos = () => {
