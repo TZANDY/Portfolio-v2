@@ -15,9 +15,9 @@ export function Social() {
       <a href="https://github.com/TZANDY" target="_blank" title="Github" rel="noreferrer">
         <FaGithub className="text-2xl text-blue-700  m-1 transition hover:text-green-400 dark:text-slate-200 hover:animate-jump" />
       </a>
-      <a href="https://github.com/TZANDY" target="_blank" title="Whatsapp" rel="noreferrer">
+      {/*<a href="https://github.com/TZANDY" target="_blank" title="Whatsapp" rel="noreferrer">
         <FaWhatsapp className="text-2xl text-blue-700 m-1  transition hover:text-green-400 dark:text-slate-200 hover:animate-jump " />
-      </a>
+      </a>*/}
     </div>
   );
 }

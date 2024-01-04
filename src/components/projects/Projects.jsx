@@ -57,7 +57,7 @@ export default function Projects() {
           return (
             <Card
               key={p.id}
-              className="max-w-sm hover:hover:scale-105 transition"
+              className="max-w-sm transition hover:shadow-md hover:shadow-red-500"
               renderImage={() => (
                 <img
                   width={400}
