@@ -2,7 +2,7 @@ import { FaInstagram, FaLinkedin, FaFacebook, FaGithub,FaWhatsapp } from "react-
 
 export function Social() {
   return (
-    <div className="home__social flex flex-col p-4 w-16 sd:flex-row animate-pulse transition">
+    <div className="home__social flex flex-col p-4 w-16 sd:flex-row transition">
       <a href="https://instagram.com/andi.infante" target="_blank" title="Intragram" rel="noreferrer" >
         <FaInstagram className="text-2xl  text-blue-700  m-1 transition hover:text-green-400 dark:text-slate-200 hover:animate-jump" />
       </a>

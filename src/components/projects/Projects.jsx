@@ -7,7 +7,7 @@ export default function Projects() {
   const [openModal, setOpenModal] = useState(false);
   const [listaProyectos, setListaProyectos] = useState([]);
   const url = "https://andidev.somee.com";
-  
+
 
   const llenarDatos = () => {
     setListaProyectos([...projects]);
@@ -15,7 +15,7 @@ export default function Projects() {
 
   const obtenerDatos = async () => {
     try {
-      const res = await fetch(url+"/api/Proyecto/Lista");
+      const res = await fetch(url + "/api/Proyecto/Lista");
       const data = await res.json();
       setListaProyectos([...data.response]);
     } catch (error) {
@@ -76,7 +76,7 @@ export default function Projects() {
                 </Badge>
               </div>
 
-              <p className="font-normal text-gray-700 dark:text-gray-400">
+              <p className="font-normal text-gray-700 dark:text-gray-400 h-[20] items-center">
                 {p.descripcion}
               </p>
               <div className="flex flex-wrap gap-2">
