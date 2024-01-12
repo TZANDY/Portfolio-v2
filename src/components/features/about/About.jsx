@@ -4,7 +4,7 @@ import Info from "./Info";
 import Education from "../../education/Education";
 import Experience from "../../experience/Experience";
 import Skills from "../../skills/Skills";
-import CV from "../../../assets/CV_Andi_Infante.pdf";
+import CV from "../../../assets/CV_Andi_Infante_.pdf";
 
 const downloadCv = () => {};
 
